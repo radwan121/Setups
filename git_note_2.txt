@@ -1,0 +1,35 @@
+git show commit_id / git show / git show HEAD
+
+	GIT SHOW HEAD [ will show the head commit ]
+
+	GIT SHOW HEAD~(num) or GIT SHOW COMMIT_ID [to see a specified commit]
+	
+-----------------------------------------------------------------------------
+
+HEAD WILL BE IN THE RECENT COMMIT
+
+git checkout is much safer than git reset 
+
+	GIT CHECKOUT COMMIT_ID or GIT CHECKOUT HEAD~num
+	[this will take the head to the specified id and between this all the gits will be
+	removed but they will still exist]
+-----------------------------------------------------------------------------
+
+git checkout master : 
+
+	will move to the previous state.
+--------------------------------------------------------------------------
+.GITIGNORE
+
+	can store secret things that wee don't wanna share.
+	
+	(file name).txt 
+	.env 
+	*.txt [ ignore all txt extention files]
+	!(file name).txt [ will not ignore main.txt]
+	(file name)?.txt [ will ignore that specified file]
+	(folder name)/  [will ignore that whole folder]
+
+	 
+create a .gitignore file then type that file name(that needs to be hidden) with extension.
+------------------------------------------------------------------

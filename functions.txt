@@ -1,0 +1,10 @@
+round() == will turn a float number to integer number.[ round(5.85)=5]
+
+trunc() == will delete the decimal number after decimal point [trunc(0.556)=0]
+
+ceil() == will convert the float number to the upper integer number. [ceil(2.3) = 3]
+
+floor() == will convert the float number to it's lower integer number. [floor(5.78) = 5]
+
+abs() == used for conerting to absolute number. [abs(-34) = 34]
+

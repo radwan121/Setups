@@ -1,0 +1,121 @@
+Git and Github two are different
+
+Repository--> is a remote folder where people can get access. The remote folder is stored in the github. 
+		  Github hosts the project folder then other accessible users uses that folder's clone in their 
+	        local systems then they can modify the project and after that they will submit that in the same project file
+		  To bring that project file in the local computer,  git is used then changes can be made.
+
+
+GITHUB --> service / host git ( source code, folder) / provides GUI( Graphical Unit Interface)
+
+GIT   ---> Change control, version control, tool / software / provides CLI ( Command Line Interface)
+
+Working Directory --> Here git is initialized then files are created.
+
+Staging area --> After working directory git is brought to staging area. In this area,
+			the git can track the files.
+
+Local repository --> After staging area git is transfered to Local repository. 
+			   Where it is ready to be stored into repository.
+
+
+[ make directory --> initial git --> make file --> Add git --> commit the git -->
+
+
+
+
+mkdir = make directory [commandto make a folder]
+
+cd (folder name) -- to go to that folder.
+
+ls-a = to see the insight of the folder
+
+git init -- creating / initializing git repository
+
+after that (folder name).git will be saved.
+--------------------------------------------------------------
+git status --> to see whether files are tracked or untracked in the working directory and staging area
+
+		
+	C:\Users\Radwan\Desktop\note>day2.txt
+
+	C:\Users\Radwan\Desktop\note>git status
+	On branch master
+
+	No commits yet
+
+	Untracked files:
+  	(use "git add <file>..." to include in what will be committed)
+        day1.txt
+        day2.txt
+
+	nothing added to commit but untracked files present (use "git add" to track)
+------------------------------------------------
+GIT STAGING & UNSTAGING
+	
+	git add (file name)
+	git add-A (stage all changed file in directory and sub directories)
+	git add . (stage all changed file in directory but not sub-directories)
+	git *.(extension) [take all directories realted to that extension in staging area]
+	git **/*.(extension) [take all directories and sub-directories realted to that extension in staging area]
+------------------------------------------------
+REMOVING / UNTRACKING:
+
+(use "git rm --cached <file>..." to unstage)
+ exm:
+	C:\Users\Radwan\Desktop\note>git rm --cached day2.txt
+	rm 'day2.txt'
+------------------------------------------------
+RESTORING / UNDO:
+
+(use "git restore <file>..." to discard changes in working directory)
+
+-----------------------------------------------
+	
+From Staging area to Local repository
+	
+git commit -m "message here"
+	
+	C:\Users\Radwan\Desktop\task>git commit -m "day2 data 2 here"
+	[master 254b2eb] day2 data 2 here
+ 	1 file changed, 4 insertions(+)
+	 create mode 100644 day2.txt
+
+	C:\Users\Radwan\Desktop\task>git status
+	On branch master
+	nothing to commit, working tree clean
+	
+
+git log = to see the commit history
+	
+	C:\Users\Radwan\Desktop\task>git log
+	commit 254b2eb08032aeb17a4810458e27c5eb3974b077 (HEAD -> master) 	[I am in this commit]
+	Author: Red_01 <radwankhondokar3652@gmail.com>
+	Date:   Fri Sep 9 00:18:49 2022 +0600
+
+    	day2 data 2 here	[LAST COMMIT WILL BE SHOWN AT THE TOP]
+
+	commit 15bc017ce2741e8e19eccdb2e1d84fe6e27321c6
+	Author: Red_01 <radwankhondokar3652@gmail.com>
+	Date:   Fri Sep 9 00:17:08 2022 +0600
+
+   	 data1 data is added
+
+git log --oneline
+ 
+	C:\Users\Radwan\Desktop\task>git log --oneline
+	de65ec2 (HEAD -> master) day2 data is added
+	15bc017 data1 data is added
+------------------------------------------------
+GIT UNCOMMIT
+
+	git reset --soft HEAD~ [to undo the act of commiting and leaving everything else intact in staging area]
+		data will be uncommited in the staging area but will still be added.
+
+	git reset HEAD~ [undo the act of commiting and also removing from the staging area
+				will be inside the working directory]
+		
+		
+	git reset --hard HEAD~ [completely undo, restting everything to the previous commit]
+		the file will be deleted completely
+

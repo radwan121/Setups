@@ -1,0 +1,104 @@
+ [ BRANCH ]
+
+	Is a new and separate branch of the master repo.
+	Branch is a copy of a master. Branching a useful 
+	for big projects or task. SO whatever change is made
+	it may not affect other.
+
+> If we want to do branching and merging locally then first we have to pull 
+  then push.
+
+> git branch (branch name) [ Branch is made ]
+
+> git checkout (branch name) [ To move to that branch ]
+
+> git checkout master [ branch is moved to master ]
+
+> git merge (branch name ) [ Merging with master ]
+
+> git branch -d (branch_name) [To delete a branch]
+
+> We cannot delete active branch.  To delete a branch we must move to main
+  then delete that branch.
+
+exm:
+	C:\Users\Radwan\Desktop\Experiment>git branch
+	* feature1
+	  main
+
+	C:\Users\Radwan\Desktop\Experiment>git checkout main
+	Switched to branch 'main'
+	Your branch is up to date with 'origin/main'.
+
+	C:\Users\Radwan\Desktop\Experiment>git branch
+	  feature1
+	* main
+
+	C:\Users\Radwan\Desktop\Experiment>git branch -d feature1
+	Deleted branch feature1 (was 28071b3).
+---------------------------------
+
+--->	C:\Users\Radwan\Desktop\Experiment>git branch
+	* main  [ * sign means current working branch ]
+
+---> 	C:\Users\Radwan\Desktop\Experiment>git branch feature1   [ Creating Branch ]
+
+	C:\Users\Radwan\Desktop\Experiment>git branch
+	feature1
+	* main
+
+---> 	C:\Users\Radwan\Desktop\Experiment>git checkout feature1 [Branched switched to feature1]
+	Switched to branch 'feature1'
+
+	C:\Users\Radwan\Desktop\Experiment>git branch
+	* feature1
+  	main
+
+---------------------------------
+
+> git branch -M main [ to rename ]
+
+--------------------------------
+MERGE CONFLICT AND RESOLVE
+
+ > 	When there are same contents between main and a branch then at the time of merging
+	conflicts occurs between main annd branch occurs. So to solve this problem, 
+	we can do this in 2 ways,, using git and github.
+
+	example of git : 
+	----------------
+
+	Auto-merging t.txt
+	CONFLICT (content): Merge conflict in t.txt
+	Automatic merge failed; fix conflicts and then commit the result.
+
+	
+	>>>>>after editing t.txt file (what we want to keep)
+
+	
+	C:\Users\Radwan\Desktop\gitt>t.txt
+
+	C:\Users\Radwan\Desktop\gitt>git add t.txt
+
+	C:\Users\Radwan\Desktop\gitt>git commit -m "Resolved conflict"
+	[master 7cb8b2a] Resolved conflict
+
+	C:\Users\Radwan\Desktop\gitt>git status
+	On branch master
+	nothing to commit, working tree clean
+-------------------------------------
+ISSUES :
+
+	Assigning some task to someone by creating issue  which is needed to done in a 
+	certain time.
+
+	> Click new issue
+	> Give it a name relevant to the task.
+	> Give some information in the "write" section. (Optional)
+	> Click on assignees to assign members.
+	> Click on "Filter labels" relevant to  the issue.
+ 	> PROJECTS & MILESTONES are optional.
+	> #(number) indicates issue id.
+	> Use the id number in commit message after solution.
+	> The assigned member then finally can close the issue after solution.
+---------------------------------------

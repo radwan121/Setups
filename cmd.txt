@@ -1,0 +1,113 @@
+folder is also known as directory
+
+C:\Users\Radwan> --> shows that we are in the c drive ,user folder, Radwan folder
+----------------------
+dir = to see the folders in that file
+
+exm: 
+	C:\Users\Radwan>dir Desktop
+	 Volume in drive C is OS
+	 Volume Serial Number is AED8-6B04
+	
+	 Directory of C:\Users\Radwan\Desktop
+
+	09/08/2022  11:27 AM    <DIR>          .
+	09/08/2022  12:55 PM    <DIR>          ..
+	09/08/2022  12:49 PM    <DIR>          notes
+	09/06/2022  03:09 PM    <DIR>          python
+	09/05/2022  11:48 PM    <DIR>          Sublime codes
+	09/07/2022  12:15 AM    <DIR>          vs code
+----------------------- 
+CLS = to clear screen
+-----------------------
+cd = changes directory (step by step) 
+
+exm ; 
+	C:\Users\Radwan>cd Desktop
+	--> C:\Users\Radwan\Desktop>
+exm: 
+	C:\>cd Users
+	C:\Users>cd Radwan
+	C:\Users\Radwan>cd ..
+-----------------------
+cd .. --> to go to the previous directory 
+
+exm: 
+	C:\Users\Radwan\Desktop>cd ..
+	C:\Users\Radwan>
+-----------------------
+(command_name)/command/? = to see or to know the use of the command 
+
+exm: 
+	C:\Users\Radwan>cls/command/?
+	Clears the screen.
+	Cls
+-----------------------
+
+mkdir =  to make a file or directory
+
+exm: 
+	C:\Users\Radwan\Desktop>mkdir Test1 Test2 Test3
+-----------------------
+rmdir (file name) = to remove that file
+
+exm: 
+	C:\Users\Radwan\Desktop>rmdir Test1
+-----------------------
+echo >  --> to make a file inside a directory
+or 
+type nul>  --> to make a file inside a directory
+
+exm : 
+	C:\Users\Radwan\Desktop\Test1>type nul > index2.html
+
+	C:\Users\Radwan\Desktop\Test1>echo > dex3.html
+
+	[dex.html & index.html files are created inside Test1 folder
+-----------------------
+
+del = to delete a file
+
+exm: C:\Users\Radwan\Desktop\Test1>del dex3.html
+-----------------------
+
+C:\Users\Radwan\Desktop\Test1>dex3.html
+
+--> file will be opened
+-----------------------
+
+start (task_name) (file_name) = file will be opened in the default application
+
+exm: 
+	C:\Users\Radwan\Desktop\Test1>start code mytext1.txt
+
+-----------------------
+
+type (file name) = to read the content of that file
+
+-----------------------
+
+echo (content) > (file_name) = to write a content in that file but the previous 
+					 content will be removed.
+
+echo (content) >> (file_name) = now the previous content will not be removed.
+-----------------------
+
+rmdir = to delete a folder
+exm: 
+C:\Users\Radwan\Desktop\Test1>start code mytext1.txt
+
+C:\Users\Radwan\Desktop\Test1>cd..
+
+C:\Users\Radwan\Desktop>rmdir Test1
+The directory is not empty.
+
+C:\Users\Radwan\Desktop>rmdir /s Test1
+Test1, Are you sure (Y/N)? Y
+
+C:\Users\Radwan\Desktop>
+------------------------
+
+ntestat = to get IP address
+------------------------
+

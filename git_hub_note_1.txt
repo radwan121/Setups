@@ -1,0 +1,223 @@
+1) log into github account.
+
+2) new repository --> repository name --> Description(optional) 
+
+3) make it public or private
+
+// ADD README + ADD .gitignore(if we want to ignore something) + Choose license (optional)
+
+4) Create repo
+
+5) (choose) initial commit.
+
+6) create a new file.
+
+7) choose commit new file
+
+---------------------------------------
+
+README 
+
+-- contains the summary of the repository file.
+		( intention / how to work / aurthor name )
+
+---------------------------------------
+
+Markdown --
+	
+	extension - .md
+	
+	to format a plain text markdown is used.
+		
+	markdown gives project or directory's summery.
+
+= <p> paragraph </p>
+= _ (single underscore on both end) used for italic text
+= __ (double underscore on both end) used for bold text.
+= ~~ (double negation) used to make the text strickthrough.
+= # means h1( heading 1 )
+  ## means h2 ( heading 2 )
+  ### means h3 ( heading 3 )
+  ------
+  ------
+
+  ```
+= Multiple lines
+
+  ```
+
+= (  ) two spaces at the end of any lines will automaticaly make a new line. [braces excluded]
+
+=  ### Ordered List
+	1. Item 1
+	2. Item 2
+	3. Item 3
+
+output: 	
+	1. Item 1
+	2. Item 2
+	3. Item 3
+--------------------------
+= ### Unordered List
+	- Item 1   
+	  - Item1.1
+	  - Item 1.2  
+	- Item 2  
+	  - Item 2.1
+	  - Item 2.2
+	- Item 3
+	  - Item 3.1
+	  - Item 3.2
+
+output: 
+
+	Item 1
+		Item1.1
+		Item 1.2
+	Item 2
+		Item 2.1
+		Item 2.2
+	Item 3
+		Item 3.1
+		Item 3.2
+------------------------
+
+AUTOMATIC LINK
+
+[just use write or copy paste the link, it will show as a link
+
+by pressing it we can get into that website]
+-----------------------
+
+DISABLED LINK
+
+`(provide link here)`  [link will be disabled by using backtik at the both end]
+
+-----------------------
+
+MARKDOWN LINK SYNTAX
+
+[title](link)
+
+exm: 
+	[geeksforgeeks](https://www.geeksforgeeks.org/)
+
+	using this format for a large number of links is inconveinient so;
+
+//All link  addresses: 
+
+
+	[geeksforgeeks][geeksforgeeks]
+	
+	[facebook][facebook]
+
+	[codeforces][codeforces]
+
+		<!-- all link  addresses -->
+
+	[geeksforgeeks]: https://www.geeksforgeeks.org/ 
+
+	[facebook]: https://www.facebook.com/radwan.khondokar.7/
+
+	[codeforces]: https://codeforces.com/profile/radwan121
+
+--------------------------
+
+IMAGE SYNTAX
+
+	![alt text](image_name)
+
+exm :
+	![profile](./image/goku.png)
+[using html syntax]
+	<img src="./image/goku.png" width="400" title="profile image">
+
+-------------------------
+
+TABLE SYNTAX
+
+	| name | email |   
+	| ----- | ----- |
+	| Radwan Khondokar | radwankhondokar3652@gmail.com |
+------------------------ 
+	 
+TO SEE THE CONNECTION BETWEEEN LOCAL REPO AND REMOTE REPO
+	
+	git remote
+
+	git remote -v [extra explanation]
+exm: 
+	C:\Users\Radwan\Desktop>git remote -v
+	origin  https://github.com/radwan121/Test_.git (fetch)
+	origin  https://github.com/radwan121/Test_.git (push)
+---------------------------------------
+
+TO ADD REMOTE URL OR REPOSITORY
+	
+	git remote add name <REMOTE_URL>
+exm:
+	C:\Users\Radwan\Desktop>git remote add origin https://github.com/radwan121/Test_.git
+
+---------------------------
+CLONING [COPYING THE SAME FILE FROM REMOTE REPO TO LOCAL]
+	
+	git clone
+
+exm: 
+	C:\Users\Radwan>git clone https://github.com/radwan121/life-story
+	Cloning into 'life-story'...
+	remote: Enumerating objects: 6, done.
+	remote: Counting objects: 100% (6/6), done.
+	remote: Compressing objects: 100% (4/4), done.
+	remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+	Receiving objects: 100% (6/6), done.
+
+----------------------------
+PULLING AND PUSHING
+
+[PUSHING IS FOR TRANSFERING THE FILE FROM LOCAL TO REMOTE]
+
+exm: 
+
+	C:\Users\Radwan\life-story>git push -u origin main
+
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+	Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+	To https://github.com/radwan121/life-story
+	9adcbd8..aee5469  main -> main
+	branch 'main' set up to track 'origin/main'.
+
+[PULLING OR CLONING IS USED FOR COPYING FROM REMOTE TO LOCAL]
+
+exm: 
+	
+	C:\Users\Radwan\life-story>git pull
+	remote: Enumerating objects: 5, done.
+	remote: Counting objects: 100% (5/5), done.
+	remote: Compressing objects: 100% (3/3), done.
+	remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (3/3), 716 bytes | 37.00 KiB/s, done.
+	From https://github.com/radwan121/life-story
+	c8a0f95..ac9e4e9  main       -> origin/main
+	Updating c8a0f95..ac9e4e9
+	Fast-forward
+	test1.txt | 1 +
+	1 file changed, 1 insertion(+)
+
+------------------------------
+
+Connecting remote repo with local repo
+
+-->	make a directory > initialize git > git remote add origin {link of remote repo}
+	
+way 2:
+
+--> 	clone remote repo in local.
+
+-------------------------------
+
+	
